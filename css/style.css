@@ -640,6 +640,7 @@ h1, h2, h3, h4 {
     align-items: center;
 }
 
+/*
 .qr-frame {
     background: #fff;
     padding: 18px;
@@ -649,13 +650,37 @@ h1, h2, h3, h4 {
     display: inline-block;
     position: relative;
 }
+*/
 
+.qr-frame {
+    background: #fff;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    border: 3px solid var(--gold-accent);
+    display: inline-block;
+    position: relative;
+    max-width: 290px;
+    width: 100%;
+}
+
+/*
 .qr-image {
     width: 220px;
     height: 220px;
     display: block;
     border-radius: 8px;
     object-fit: cover;
+}
+*/
+.qr-image {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    object-fit: contain; /* ക്രോപ്പ് ആവാതെ ഫുൾ ഇമേജ് കാണിക്കാൻ */
+    margin: 0 auto;
 }
 
 .qr-tag {
